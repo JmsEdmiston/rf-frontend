@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { TestSuite } from '../components/TestSuite';
+import { fetchTestSuitesData } from '../utils/apis';
 import './TestList.scss';
 
 export const TestList = () => {
@@ -7,13 +8,8 @@ export const TestList = () => {
 
   useEffect(() => {
     const loadTestSuites = async () => {
-      try {
-        const response = await fetch('http://localhost:3456/test_suites');
-        const responseJSON = await response.json();
-        setTestSuites(responseJSON);
-      } catch (err) {
-        console.error(err);
-      }
+      const data = await fetchTestSuitesData();
+      setTestSuites(data);
     }
     loadTestSuites();
   }, []);
