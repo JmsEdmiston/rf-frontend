@@ -1,0 +1,26 @@
+.suite-wrapper {
+    padding: 0px 8px;
+    border-bottom: 1px solid gray;
+    font-size: 16px;
+
+    .suite-header {
+        width: 100%;
+        padding: 4px 0px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+
+        .suite-title {
+            flex: 1;
+            font-size: 18px;
+        }
+
+        .suite-count {
+            margin-right: 20px;
+        }
+    }
+
+    .suit-plan-list {
+        margin: 8px 24px;
+    }
+}
