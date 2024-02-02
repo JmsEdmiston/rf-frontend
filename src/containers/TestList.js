@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { TestSuite } from '../components/TestSuite';
+import './TestList.scss';
 
 export const TestList = () => {
   const [testSuites, setTestSuites] = useState([]);

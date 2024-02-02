@@ -13,6 +13,16 @@
         .suite-title {
             flex: 1;
             font-size: 18px;
+
+            &::before {
+                margin-right: 4px;
+                content: "\25B6";
+                font-size: 12px;
+            }
+        }
+
+        .suite-expanded::before {
+            content: "\25BC";
         }
 
         .suite-count {

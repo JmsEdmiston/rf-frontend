@@ -13,7 +13,7 @@ export const TestSuite = ({ suite }) => {
     return (
         <div className='suite-wrapper'>
             <div className='suite-header' onClick={onExpand}>
-                <span className='suite-title'>{test_suite_name}</span>
+                <span className={`suite-title ${expanded ? 'suite-expanded' : ''}`}>{test_suite_name}</span>
                 <span className='suite-count'>{test_plans.length} tests</span>
                 <button className='suite-edit-btn'>Edit</button>
             </div>
