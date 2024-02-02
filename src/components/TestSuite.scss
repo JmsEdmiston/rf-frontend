@@ -1,0 +1,46 @@
+.suite-wrapper {
+    padding: 0px 8px;
+    border-bottom: 1px solid gray;
+    font-size: 16px;
+
+    .suite-header {
+        width: 100%;
+        padding: 4px 0px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+
+        .suite-title {
+            flex: 1;
+            font-size: 18px;
+
+            &::before {
+                margin-right: 4px;
+                content: "\25B6";
+                font-size: 12px;
+            }
+        }
+
+        .suite-expanded::before {
+            content: "\25BC";
+        }
+
+        .suite-count {
+            margin-right: 20px;
+        }
+
+        .suite-edit-btn {
+            border: none;
+            background-color: white;
+
+            &:hover {
+                color: gray;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .suit-plan-list {
+        margin: 8px 24px;
+    }
+}

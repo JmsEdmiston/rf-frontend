@@ -1,0 +1,70 @@
+.edit-modal-container {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+
+    .modal-wrapper {
+        width: 60%;
+        padding: 20px;
+        margin: 15% auto;
+        background-color: white;
+
+        .modal-header {
+            margin: 12px 0px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 4px;
+
+            h3 {
+                margin: 0px;
+            }
+
+            input {
+                flex: 1;
+                padding: 4px;
+                font-size: 16px;
+            }
+        }
+
+        .modal-content {
+            height: 50vh;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .test-plan-item {
+                display: flex;
+                flex-direction: row;
+                gap: 8px;
+
+                & > div:first-child {
+                    flex: 1;
+                    display: flex;
+
+                    & > input {
+                        flex: 1;
+                    }
+                }
+
+                &:last-child {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .modal-footer {
+            width: 100%;
+            margin-top: 12px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 4px;
+        }
+    }
+}

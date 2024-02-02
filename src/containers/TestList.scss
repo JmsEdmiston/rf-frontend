@@ -1,0 +1,10 @@
+.container {
+    margin: 40px auto 0px;
+    max-width: 720px;
+    max-height: calc(100vh - 60px);
+    overflow: auto;
+
+    &:first-child {
+        border-top: 1px solid gray;
+    }
+}

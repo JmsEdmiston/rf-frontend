@@ -1,0 +1,17 @@
+.test-plan-wrapper {
+    padding: 4px 0px;
+    display: flex;
+    flex-direction: row;
+
+    .test-plan-name {
+        flex: 1;
+    }
+
+    .test-plan-browser {
+        width: 120px;
+    }
+
+    .test-plan-instructions {
+        width: 80px;
+    }
+}
