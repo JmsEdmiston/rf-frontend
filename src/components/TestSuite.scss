@@ -28,6 +28,16 @@
         .suite-count {
             margin-right: 20px;
         }
+
+        .suite-edit-btn {
+            border: none;
+            background-color: white;
+
+            &:hover {
+                color: gray;
+                cursor: pointer;
+            }
+        }
     }
 
     .suit-plan-list {
